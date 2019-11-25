@@ -20,5 +20,6 @@ body {
     background-size: cover;
 }
 .haus h1 {
-    color: silver;
+    color: rgba(95, 4, 4, 0.623);
+    font-family: 'Cinzel', serif;
 }
