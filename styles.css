@@ -13,7 +13,7 @@ body {
     "haus"
     "main"
     "footer";
-    justify-content: center;
+    text-align: center;
     background-image: url(http://static1.squarespace.com/static/56d725b88a65e2c48c079abf/56d727fbb4ed3b3236511b37/5da37f82ff3f1e0b3342b93e/1571068838485/ar5sr.png.jpg?format=1500w);
     background-repeat: no-repeat;
     background-attachment: fixed;
