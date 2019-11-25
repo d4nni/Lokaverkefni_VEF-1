@@ -18,6 +18,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: 'Ibarra Real Nova', serif;
 }
 .haus h1 {
     color: rgba(95, 4, 4, 0.623);
