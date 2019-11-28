@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .haus {
     grid-area: haus;
 }
@@ -30,15 +34,52 @@ body {
 
 .haus {
     background-color: rgba(255, 255, 255, 0.7);
-    
 }
 
 .main {
     background-color: rgba(255, 255, 255, 0.7);
+    padding: 1em;
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding-bottom: 3em;
+}
+
+.footer li {
+    list-style-type: none;
+    line-height: 2;
+}
+
+.footnav a {
+    text-decoration: none;
+    color: black;
+}
+
+.innermenu {
+    display: flex;
+    flex-flow: column;
+}
+
+.innermenu a {
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+}
+
+.topnav a:hover,
+.footnav a:hover {
+    color: grey;
 }
 
 .mynd1 {
     width: 100%;
+    padding-bottom: 1em;
+}
+
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 @media screen and (min-width: 60em) {
@@ -49,5 +90,16 @@ body {
     body  {
         margin: 0 auto;
         padding: 0;
+    }
+
+    .col-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .innermenu {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
     }
 }
