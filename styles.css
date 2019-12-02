@@ -23,12 +23,11 @@ body {
     background-attachment: fixed;
     background-size: cover;
     font-family: 'Ibarra Real Nova', serif;
-    max-width: 65%;
-    margin: 1em auto;
-    padding: 1em;
-    background-position: center;
+    max-width: 80%;
+    margin: 0em auto;
+    padding: 0em;
 }
-.haus h2 {
+.haus h1 {
     color: rgba(95, 4, 4, 0.623);
     font-family: 'Cinzel', serif;
 }
@@ -59,6 +58,11 @@ body {
     color: black;
 }
 
+.innermenu {
+    display: flex;
+    flex-flow: column;
+}
+
 .innermenu a {
     list-style-type: none;
     color: black;
@@ -77,58 +81,9 @@ body {
 
 .col-3 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.innermenu a:hover {
-    background-color: rgb(150, 29, 25);
-}
-.innermenu a {
-    border-radius: 8px;
-    border: solid black;
+    grid-template-columns: 1fr;
 }
 
-@media screen and (min-width: 30em) {
-    body  {
-        margin: 0 auto;
-        padding: 0;
-        background-position: center;
-    }
-    .innermenu {
-        display: flex;
-        flex-flow: column;
-        align-content: space-around;
-    }
-    .innermenu a {
-        border-radius: 8px;
-        border: solid black;
-    }
-    .innermenu a:hover {
-        background-color: rgb(150, 29, 25);
-    }
-}
-
-@media screen and (min-width: 37.5em) {
-    .mynd1 {
-        max-width: 50%;
-    }
-
-    body  {
-        margin: 0 auto;
-        padding: 0;
-        background-position: center;
-    }
-
-    .col-3 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .innermenu {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-    }
-}
 @media screen and (min-width: 60em) {
     .mynd1 {
         max-width: 50%;
@@ -137,7 +92,7 @@ body {
     body  {
         margin: 0 auto;
         padding: 0;
-        background-position: center;
+        max-width: 65%;
     }
 
     .col-3 {
@@ -147,7 +102,7 @@ body {
 
     .innermenu {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row;
         justify-content: space-evenly;
     }
 }
