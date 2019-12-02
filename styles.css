@@ -26,6 +26,7 @@ body {
     max-width: 80%;
     margin: 0em auto;
     padding: 0em;
+    background-position: center;
 }
 .haus h1 {
     color: rgba(95, 4, 4, 0.623);
@@ -82,6 +83,13 @@ body {
 .col-3 {
     display: grid;
     grid-template-columns: 1fr;
+}
+.innermenu a:hover {
+    background-color: rgb(150, 29, 25);
+}
+.innermenu a {
+    border-radius: 8px;
+    border: solid black;
 }
 
 @media screen and (min-width: 60em) {
