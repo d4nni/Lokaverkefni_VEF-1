@@ -27,7 +27,7 @@ body {
     margin: 1em auto;
     padding: 1em;
 }
-.haus h1 {
+.haus h2 {
     color: rgba(95, 4, 4, 0.623);
     font-family: 'Cinzel', serif;
 }
@@ -58,11 +58,6 @@ body {
     color: black;
 }
 
-.innermenu {
-    display: flex;
-    flex-flow: column;
-}
-
 .innermenu a {
     list-style-type: none;
     color: black;
@@ -81,9 +76,49 @@ body {
 
 .col-3 {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media screen and (min-width: 30em) {
+    body  {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .innermenu {
+        display: flex;
+        flex-flow: column;
+        align-content: space-around;
+    }
+    .innermenu a {
+        border-radius: 8px;
+        border: solid black;
+    }
+    .innermenu a:hover {
+        background-color: rgb(150, 29, 25);
+    }
+}
+
+@media screen and (min-width: 37.5em) {
+    .mynd1 {
+        max-width: 50%;
+    }
+
+    body  {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .col-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .innermenu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+}
 @media screen and (min-width: 60em) {
     .mynd1 {
         max-width: 50%;
@@ -101,7 +136,7 @@ body {
 
     .innermenu {
         display: flex;
-        flex-flow: row;
+        flex-flow: row wrap;
         justify-content: space-evenly;
     }
 }
