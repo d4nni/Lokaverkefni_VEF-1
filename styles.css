@@ -92,6 +92,10 @@ body {
     border: solid black;
 }
 
+.video {
+    max-width: 100%;
+}
+
 @media screen and (min-width: 60em) {
     .mynd1 {
         max-width: 50%;
